@@ -1,0 +1,55 @@
+function check(str) {
+    return /[@]/.test(str); // Check if "@" is present
+}
+
+function digits(str) {
+    return /^\d{10}$/.test(str); // Ensure it's exactly 10 digits
+}
+
+async function main() {
+    console.log("Yes");
+
+    // Wait for DOM elements to load
+    document.querySelector("button").addEventListener("click", (events) => {
+        events.preventDefault();
+
+        
+        // Fetch input values
+        let email = document.querySelector("#Email").value.trim();
+       localStorage.setItem(`email`,email)
+        let num = document.querySelector("#number").value.trim();
+
+        
+        document.querySelectorAll(".error").forEach((el) => el.remove());
+
+        // Validation
+        let div = document.createElement("div");
+        div.classList.add("error");
+
+        if (!check(email)) {
+            div.innerHTML = `<h2>Please enter an email address with '@' in it.</h2>`;
+            document.body.append(div);
+            alert("Please write a valid email");
+            return;
+        }
+
+        if (!digits(num)) {
+            div.innerHTML = `<h2>Please enter a valid 10-digit mobile number.</h2>`;
+            document.body.append(div);
+            alert("Enter a valid mobile number");
+            return; 
+        }
+        else{
+            alert("Form submitted succesfully")
+            const user=`email:${email} \n mobile number:${num}` 
+        }
+
+        
+       
+    });
+
+    console.log("End");
+}
+
+
+main();

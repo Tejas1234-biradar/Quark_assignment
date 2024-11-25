@@ -1,0 +1,62 @@
+.navigation{
+    display: flex
+    ;
+    z-index: 100;
+    justify-content: space-between;
+    gap: 15vw;
+    /* margin: 2vw 2vw; */
+    background: transparent;
+    position:sticky;
+    top: 0.5cm;
+    
+    
+    
+}
+svg{
+    background-color: transparent;
+    height: 1cm;
+    width: 5cm;
+}
+.About-us a{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+
+}
+.domains a{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.contact a{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+} 
+.glow{
+    border: 2px transparent white;
+    padding: 10px;
+   background: #000000;
+   box-shadow: 
+   0 0 10px 3px rgba(255, 0, 255, 0.7),   /* Outer pink glow */
+   0 0 20px 5px rgba(0, 255, 255, 0.7);
+   border-radius: 8px;
+   transition: all 0.3s ease-in-out;
+   border-radius: 8px;
+   animation: glow-animation 1.5s infinite alternate;
+   height: 30px;
+ }
+ @keyframes glow-animation {
+     0% {
+         box-shadow: 
+           0 0 10px 3px rgba(255, 0, 0, 0.7),   /* Outer pink glow */
+           0 0 20px 5px rgba(221, 0, 255, 0.7);   /* Inner cyan glow */
+       }
+       100% {
+         box-shadow: 
+           0 0 20px 5px rgb(0, 38, 255),    /* Outer pink glow stronger */
+           0 0 30px 10px rgb(162, 255, 0);   /* Inner cyan glow stronger */
+       }
+ }
+

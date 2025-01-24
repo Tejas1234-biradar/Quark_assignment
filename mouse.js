@@ -1,18 +1,24 @@
+$(document).ready(function () {
+    const cursorDot = $('#cursor-do');
+    const cursorOutline = $('#cursor-outlin');
 
-        const cursorDot=document.getElementById("cursor-do")
-        const cursorOutline=document.getElementById("cursor-outlin")
-        window.addEventListener("mousemove",function(e){
-            const posX=e.pageX;
-            const posY=e.pageY;
-            cursorDot.style.left=`${posX}px`;
-            cursorDot.style.top=`${posY}px`;
+    window.addEventListener("mousemove", function (e) {
+        const posX = e.pageX;
+        const posY = e.pageY;
 
+        // Update cursorDot's position using .css()
+        cursorDot.css({
+            left: `${posX}px`,
+            top: `${posY}px`
+        });
 
-            // cursorOutline.style.left=`${posX}px`;
-            // cursorOutline.style.top=`${posY}px`;
-           cursorOutline.animate({
-            left:`${posX}px`,
-            top:`${posY}px`
-           },{duration:500,fill:"forwards"})
-
-        }) 
+        // Animate cursorOutline's position
+        cursorOutline.animate({
+            left: `${posX}px`,
+            top: `${posY}px`
+        }, {
+            duration: 25,
+            fill: "forwards"
+        });
+    });
+});

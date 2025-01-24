@@ -1,121 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.teamquark.com/favicon-32x32.png">
     <title>About Us</title>
-    <link rel="stylesheet" href="ab.css ">
+    <link rel="stylesheet" href="ab.css">
     <link rel="stylesheet" href="navbar.css">
+    <script src="jquery.js"></script>
+    <script src="hs1.js"></script>
+    <script src="mouse.js"></script>
+    <script src="script_a4.js"></script>
+    <script src="scroll.js"></script>
 </head>
-<body >
+
+<body>
     <div class="cursor-dot" id="cursor-do"></div>
     <div class="cursor-outline" id="cursor-outlin"></div>
-    
-    <script src="hs1.js"></script>
-    <div class="nav">
+
+    <nav class="nav">
         <div class="navigation" style="position: sticky;">
-
-            <a href="homepage.html"> <svg class="cb-svgsprite -logo">
-                 <path d="M17.6953 11.5625C18.0566 10.6934 18.2324 9.60938 18.2422 8.30078C18.252 6.99219 18.0664 5.88867 17.6953 5C16.6211 2.26562 13.9062 0.927734 9.56055 0.976562C5.21484 0.927734 2.5 2.26562 1.41602 5C1.04492 5.87891 0.859375 6.96289 0.859375 8.26172C0.859375 9.56055 1.04492 10.6445 1.41602 11.5234C2.04102 13.0566 3.18359 14.1211 4.69727 14.6582C5.45898 14.9219 6.2207 15.1074 6.99219 15.2148C7.76367 15.3223 8.61328 15.3809 9.56055 15.3809C10.3711 15.3809 11.25 15.332 12.1973 15.2246C13.1445 15.127 13.8477 14.9609 14.3164 14.7363L15.498 15.918L17.7832 13.623L17.002 12.8418C17.2754 12.4609 17.5098 12.0312 17.6953 11.5625ZM9.56055 12.1582C7.28516 12.1582 5.87891 11.4551 5.3418 10.0586C5.15625 9.64844 5.05859 9.05273 5.05859 8.26172C5.05859 7.4707 5.15625 6.875 5.3418 6.46484C5.87891 5.05859 7.28516 4.35547 9.56055 4.35547C10.8105 4.35547 11.7578 4.54102 12.4023 4.91211C13.0566 5.2832 13.5156 5.80078 13.7793 6.46484C13.9258 6.82617 14.0137 7.34375 14.0332 8.01758C14.0625 8.69141 14.0137 9.25781 13.8965 9.7168L12.5977 8.41797L10.3027 10.7227L11.543 11.9629C10.9863 12.0898 10.3223 12.1582 9.56055 12.1582ZM30.7617 15.1172C31.7676 14.873 32.6172 14.4824 33.3203 13.9355C34.1309 13.3203 34.7363 12.5098 35.1367 11.5234C35.5273 10.5957 35.7227 9.50195 35.7227 8.24219V1.50391H31.6602V8.24219C31.6602 8.74023 31.6113 9.16992 31.5137 9.55078C31.3281 10.3027 31.1133 10.752 30.6445 11.1035C30.1855 11.4453 29.9023 11.582 29.3262 11.6699C29.043 11.7188 28.8184 11.7383 28.6621 11.748C28.5156 11.7578 28.3008 11.7578 28.0371 11.7578C27.7734 11.7578 27.5586 11.7578 27.4023 11.748C27.2559 11.7383 27.0312 11.7188 26.7383 11.6699C26.4453 11.6211 26.2109 11.5625 26.0254 11.4844C25.6738 11.3184 25.127 10.957 24.8535 10.4785C24.5898 10 24.375 9.22852 24.375 8.24219V1.50391H20.3223V8.24219C20.3223 9.50195 20.5176 10.5957 20.918 11.543C21.3184 12.5098 21.9336 13.3105 22.7637 13.9355C24.0234 14.9121 25.7812 15.4004 28.0371 15.4004C29.0625 15.4004 29.9707 15.3027 30.7617 15.1172ZM42.6953 1.50391L36.0742 15H40.5957L41.3965 13.3789H48.5352L49.3359 15H53.8379L47.2168 1.50391H42.6953ZM42.959 10.1367L44.9609 6.10352L46.9141 10.1367H42.959ZM65.9668 15H70.4688L68.3203 10.5957C68.5742 10.4297 68.8086 10.2246 69.0234 10C69.4922 9.54102 69.8535 9.01367 70.1074 8.41797C70.6152 7.19727 70.6152 5.76172 70.1074 4.54102C69.5996 3.33984 68.6426 2.39258 67.4414 1.88477C66.8262 1.63086 66.1816 1.50391 65.5078 1.50391H55.3809V15H59.4434V11.4648H64.2285L65.9668 15ZM59.4434 4.73633H64.6875C65.166 4.73633 65.5664 4.91211 65.9082 5.25391C66.25 5.5957 66.4258 6.00586 66.4258 6.48438C66.4258 6.96289 66.2598 7.37305 65.918 7.71484C65.5762 8.05664 65.166 8.22266 64.6875 8.22266H59.4434V4.73633ZM87.8516 1.50391H81.9238L76.8066 6.2793V1.50391H74.7656H72.7441L72.7637 15H74.7852H76.8066V11.8359L78.5254 10.2246L82.5879 15H87.9102L81.4844 7.46094L87.8516 1.50391Z" fill="white"></path> </svg></a>
-                 <div class="About-us glow">
-                     <a href="demo.html">About</a>
- 
-                 </div>
-             <div class="domains glow">
-                 <a href="domain.html">Domains</a>
-             </div>
-             <div class="contact glow">
-                 <a href="Contact Us.html">Contact Us</a>
-             </div>
-                
-         </div>
-
-        
-            
-    </div>
-    <div class="title" id="title">
-        <h1>Transforming the <br> Quark way!!</h1>
-    </div>
-    <div class="banner" id="banner">
-        <img src="banner.jpg" alt="">
-    </div>
-    <script src="mouse.js"></script>
-    
-   
-        <div class="main">
-            <div class="info">
-                <div class="left1">
-                    <u>Our_Club</u>
-
-                    
-                    
-                </div>
-                <div class="right1">
-
-                <cite>QUARK</cite> is a technical club whose mission is to educate members about new emerging technologies in industry and develop a passion for technology. We believe that innovation happens when a variety of individuals with diverse points of view collaborate to create ideas. Every member of our club will be encouraged to learn about different technologies with complete independence and flexibility.
-                </div>
-            
+            <a href="homepage.html">
+                <svg class="cb-svgsprite -logo">
+                    <path d="M17.6953 11.5625C18.0566 10.6934 18.2324 9.60938 18.2422 8.30078C18.252 6.99219 18.0664 5.88867 17.6953 5C16.6211 2.26562 13.9062 0.927734 9.56055 0.976562C5.21484 0.927734 2.5 2.26562 1.41602 5C1.04492 5.87891 0.859375 6.96289 0.859375 8.26172C0.859375 9.56055 1.04492 10.6445 1.41602 11.5234C2.04102 13.0566 3.18359 14.1211 4.69727 14.6582C5.45898 14.9219 6.2207 15.1074 6.99219 15.2148C7.76367 15.3223 8.61328 15.3809 9.56055 15.3809C10.3711 15.3809 11.25 15.332 12.1973 15.2246C13.1445 15.127 13.8477 14.9609 14.3164 14.7363L15.498 15.918L17.7832 13.623L17.002 12.8418C17.2754 12.4609 17.5098 12.0312 17.6953 11.5625ZM9.56055 12.1582C7.28516 12.1582 5.87891 11.4551 5.3418 10.0586C5.15625 9.64844 5.05859 9.05273 5.05859 8.26172C5.05859 7.4707 5.15625 6.875 5.3418 6.46484C5.87891 5.05859 7.28516 4.35547 9.56055 4.35547C10.8105 4.35547 11.7578 4.54102 12.4023 4.91211C13.0566 5.2832 13.5156 5.80078 13.7793 6.46484C13.9258 6.82617 14.0137 7.34375 14.0332 8.01758C14.0625 8.69141 14.0137 9.25781 13.8965 9.7168L12.5977 8.41797L10.3027 10.7227L11.543 11.9629C10.9863 12.0898 10.3223 12.1582 9.56055 12.1582ZM30.7617 15.1172C31.7676 14.873 32.6172 14.4824 33.3203 13.9355C34.1309 13.3203 34.7363 12.5098                    35.1367 11.5234C35.5273 10.5957 35.7227 9.50195 35.7227 8.24219V1.50391H31.6602V8.24219C31.6602 8.74023 31.6113 9.16992 31.5137 9.55078C31.3281 10.3027 31.1133 10.752 30.6445 11.1035C30.1855 11.4453 29.9023 11.582 29.3262 11.6699C29.043 11.7188 28.8184 11.7383 28.6621 11.748C28.5156 11.7578 28.3008 11.7578 28.0371 11.7578C27.7734 11.7578 27.5586 11.7578 27.4023 11.748C27.2559 11.7383 27.0312 11.7188 26.7383 11.6699C26.4453 11.6211 26.2109 11.5625 26.0254 11.4844C25.6738 11.3184 25.127 10.957 24.8535 10.4785C24.5898 10 24.375 9.22852 24.375 8.24219V1.50391H20.3223V8.24219C20.3223 9.50195 20.5176 10.5957 20.918 11.543C21.3184 12.5098 21.9336 13.3105 22.7637 13.9355C24.0234 14.9121 25.7812 15.4004 28.0371 15.4004C29.0625 15.4004 29.9707 15.3027 30.7617 15.1172ZM42.6953 1.50391L36.0742 15H40.5957L41.3965 13.3789H48.5352L49.3359 15H53.8379L47.2168 1.50391H42.6953ZM42.959 10.1367L44.9609 6.10352L46.9141 10.1367H42.959ZM65.9668 15H70.4688L68.3203 10.5957C68.5742 10.4297 68.8086 10.2246 69.0234 10C69.4922 9.54102 69.8535 9.01367 70.1074 8.41797C70.6152 7.19727 70.6152 5.76172 70.1074 4.54102C69.5996 3.33984 68.6426 2.39258 67.4414 1.88477C66.8262 1.63086 66.1816 1.50391 65.5078 1.50391H55.3809V15H59.4434V11.4648H64.2285L65.9668 15ZM59.4434 4.73633H64.6875C65.166 4.73633 65.5664 4.91211 65.9082 5.25391C66.25 5.5957 66.4258 6.00586 66.4258 6.48438C66.4258 6.96289 66.2598 7.37305 65.918 7.71484C65.5762 8.05664 65.166 8.22266 64.6875 8.22266H59.4434V4.73633ZM87.8516 1.50391H81.9238L76.8066 6.2793V1.50391H74.7656H72.7441L72.7637 15H74.7852H76.8066V11.8359L78.5254 10.2246L82.5879 15H87.9102L81.4844 7.46094L87.8516 1.50391Z" fill="white"></path>
+                </svg>
+            </a>
+            <div class="About-us ">
+                <a href="demo.html"style="color:white">About</a>
             </div>
-            <div class="images" id="image-container">
-                <div class="img1">
-                    <img src="us_1.jpg" alt="">
-                </div>
-                <div class="img2">
-                    <img src="us_2.jpg" alt="">
-                </div>
+            <div class="domains ">
+                <a href="domain.html"style="color:white">Domains</a>
             </div>
-            <div class="info1">
-                <div class="left2">
-
-                    Simply put, we dare what <br> others don't
-                </div>
-                   
-                   <h3 > Introducing new technologies, promoting collaborative work,  <br>Providing guidance for open source
-                    <br>
-                    <br>
-                    Provide a supportive and positive learning experience. 😁 To foster a collaborative environment for members to grow together. 👌 To introduce and work on the latest technologies in the world.</h3>
-            
-            </div>
-           
-             <div class="i1">
-                 <img src="banner_2.jpg" >
-
-             </div>   
-            <div class="flex">
-                <div class="domains">
-                    <h1>7+</h1>
-                    <h4>Domains</h4>
-                </div>
-                <div class="projects">
-                    <h1>20+</h1>
-                    <h4>completed projects</h4>
-                </div>
-                <div class="leads">
-                    <h1>10</h1>
-                    <h4>team leads</h4>
-                </div>
-            </div>
-            <div class="info2">
-
-               
-                <h1  >The  <b style="font-weight: 2000;  font-family: fantasy;"> HYPE </b> is
-                    real</h1>
-            
-                   <h3 > Newest club in college  to gain the excitement of the <br>audience very fast.</h3>
-
-            </div>
-            <div class="guts">
-                <img src="banner_3.jpg" alt="">
-            </div>
-            <div class="info3">
-
-                <h1  > Get to know us,<br>
-                    see what's up</h1>
-                    <h3 >We believe that the total is far greater than the sum of the parts. <br> We believe that close collaboration between all club members will be beneficial to everyone involved. <br> Our plans for collaboration include joint participation in events and competitions, joint preparation for interviews and competitive exams, and guidance for other opportunities</h3>
-            
+            <div class="contact">
+                <a href="Contact Us.html"style="color:white">Contact Us</a>
             </div>
         </div>
-        <script src="scroll.js"></script>
+    </nav>
+
+    <header class="title" id="title">
+        <h1>Transforming the <br> Quark way!!</h1>
+    </header>
+
+    <div class="banner" id="banner">
+        <img src="banner.jpg" alt="Banner Image">
+    </div>
+
+    <main class="main">
+        <section class="info">
+            <div class="left1">
+                <u>Our Club</u>
+            </div>
+            <div class="right1">
+                <cite>QUARK</cite> is a technical club whose mission is to educate members about new emerging technologies in industry and develop a passion for technology. We believe that innovation happens when a variety of individuals with diverse points of view collaborate to create ideas. Every member of our club will be encouraged to learn about different technologies with complete independence and flexibility.
+            </div>
+        </section>
+
+        <section class="images" id="image-container">
+            <div class="img1">
+                <img src="us_1.jpg" alt="Image 1">
+            </div>
+            <div class="img2">
+                <img src="us_2.jpg" alt="Image 2">
+            </div>
+        </section>
+
+        <section class="info1">
+            <div class="left2">
+                Simply put, we dare what <br> others don't
+            </div>
+            <h3>Introducing new technologies, promoting collaborative work, <br> Providing guidance for open source <br><br> Provide a supportive and positive learning experience. 😁 To foster a collaborative environment for members to grow together. 👌 To introduce and work on the latest technologies in the world.</h3>
+        </section>
+
+        <div class="i1">
+            <img src="banner_2.jpg" alt="Banner 2">
+        </div>
+
+        <section class="flex">
+            <div class="domains">
+                <h1>7+</h1>
+                <h4>Domains</h4>
+            </div>
+            <div class="projects">
+                <h1>20+</h1>
+                <h4>Completed Projects</h4>
+            </div>
+            <div class="leads">
+                <h1>10</h1>
+                <h4>Team Leads</h4>
+            </div>
+        </section>
+
+        <section class="info2">
+            <h1>The <b style="font-weight: 2000; font-family: fantasy;">HYPE</b> is real</h1>
+            <h3>Newest club in college to gain the excitement of the <br> audience very fast.</h3>
+        </section>
+
+        <div class="guts">
+            <img src="banner_3.jpg" alt="Banner 3">
+        </div>
+
+        <section class="info3">
+            <h1>Get to know us,<br> see what's up</h1>
+            <h3>We believe that the total is far greater than the sum of the parts. <br> We believe that close collaboration between all club members will be beneficial to everyone involved. <br> Our plans for collaboration include joint participation in events and competitions, joint preparation for interviews and competitive exams, and guidance for other opportunities.</h3>
+        </section>
+
+        <!-- Table to display the user entries -->
+        <section>
+            <h1>Contact Information</h1>
+            <table id="team-table">
+                <thead>
+                    <tr>
+                        <th>Designation</th>
+                        <th>Name</th>
+                        <th>Contact No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chairperson</td>
+                        <td>John Doe</td>
+                        <td>12321413</td>
+                    </tr>
+                    <tr>
+                        <td>Chairperson</td>
+                        <td>Sethi Srwa</td>
+                        <td>1238648</td>
+                    </tr>
+                    <tr>
+                        <td>Vice Chairperson</td>
+                        <td>Ravi Shastri</td>
+                        <td>+91 80802 92227</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <strong>Email:</strong> vitepec@vit.edu<br>
+                            <strong>Address:</strong> 666, Upper Indiranagar, Bibwewadi, Pune, Maharashtra, India — 411 037
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Form to Update Members -->
+        <section id="update-member">
+            <h2>Update Team Member</h2>
+            <form id="update-member-form">
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" placeholder="Enter designation" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+
+                <label for="contact">Contact No.:</label>
+                <input type="text" id="contact" placeholder="Enter contact number" required>
+
+                <label for="row-index">Row Number (to Replace):</label>
+                <input type="number" id="row-index" placeholder="Enter row number (optional)">
+
+                <button type="submit">Update Table</button>
+            </form>
+        </section>
+
+        <div class="record"></div>
+
+        <section class="success-stories">
+            <h2>Success Stories of the Club</h2>
+            <textarea id="success-stories-text" rows="5" placeholder="Share your success story here..."></textarea>
+            <br>
+            <button class="submit-button" onclick="sendEmail()">Submit</button>
+        </section>
+    </main>
+
+    <script>
+        function sendEmail() {
+            var story = document.getElementById('success-stories-text').value;
+            if (story) {
+                alert('Emailed successfully');
+            } else {
+                alert('Please write a success story before submitting.');
+            }
+        }
+    </script>
 </body>
+
 </html>
